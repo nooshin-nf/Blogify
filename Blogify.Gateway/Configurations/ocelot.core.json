@@ -1,0 +1,61 @@
+{
+  "Routes": [
+    {
+      "SwaggerKey": "core",
+      "Key": "core",
+      "DownstreamPathTemplate": "/api/v1/tags",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/core/tags",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //},
+      //"AddHeadersToRequest": {
+      //  "useid": "Claims[userid] > value"
+      //},
+      //"DelegatingHandlers": [
+      //  "OcelotDelegatingHandler"
+      //]
+    },
+    {
+      "SwaggerKey": "core",
+      "Key": "core",
+      "DownstreamPathTemplate": "/api/v1/posts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/core/posts",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //},
+      //"AddHeadersToRequest": {
+      //  "useid": "Claims[userid] > value"
+      //},
+      //"DelegatingHandlers": [
+      //  "OcelotDelegatingHandler"
+      //]
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+}

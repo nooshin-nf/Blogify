@@ -1,0 +1,33 @@
+{
+  "Routes": [
+    {
+      "SwaggerKey": "auth",
+      "DownstreamPathTemplate": "/api/v1/Users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/auth/users",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //},
+      //"AddHeadersToRequest": {
+      //  "useid": "Claims[userid] > value"
+      //},
+      //"DelegatingHandlers": [
+      //  "OcelotDelegatingHandler"
+      //]
+    }
+
+  ],
+  "GlobalConfiguration": {
+
+  }
+}
