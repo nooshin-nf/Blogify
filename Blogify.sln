@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogify.Web", "Blogify.Web\Blogify.Web.csproj", "{EF642EA5-A45A-480E-9EC1-C3115D9CDC8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{0C8CA212-6154-457E-B19B-7572906AD474}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogify.Identity.API", "Blogify.Identity.API\Blogify.Identity.API.csproj", "{5627BDF5-63DB-49CE-AB4E-8944319DE984}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{36967115-7EF9-4BCA-BFCC-C2A71F8C6EEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{6853AAB7-A0A1-46C9-A211-C6399C736CB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{79550785-E116-4076-82D6-25B85BB7A255}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogify.Common", "Blogify.Common\Blogify.Common.csproj", "{CE3D285B-C16B-4D18-9B62-8038117EB58B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogify.Gateway", "Blogify.Gateway\Blogify.Gateway.csproj", "{CB19C23C-C331-4253-81A7-FCDD87135321}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogify.Core.API", "Blogify.Core.API\Blogify.Core.API.csproj", "{BFC8EC9C-1CF4-4D1D-AA00-3C614F4955F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{2FF1CEFD-DAB2-4220-A67D-E71FABF599DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogify.NSwag", "Blogify.NSwag\Blogify.NSwag.csproj", "{E9A73CD8-4331-46AA-B72B-B8E3E51BDE57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF642EA5-A45A-480E-9EC1-C3115D9CDC8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF642EA5-A45A-480E-9EC1-C3115D9CDC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF642EA5-A45A-480E-9EC1-C3115D9CDC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF642EA5-A45A-480E-9EC1-C3115D9CDC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5627BDF5-63DB-49CE-AB4E-8944319DE984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5627BDF5-63DB-49CE-AB4E-8944319DE984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5627BDF5-63DB-49CE-AB4E-8944319DE984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5627BDF5-63DB-49CE-AB4E-8944319DE984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3D285B-C16B-4D18-9B62-8038117EB58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3D285B-C16B-4D18-9B62-8038117EB58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3D285B-C16B-4D18-9B62-8038117EB58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3D285B-C16B-4D18-9B62-8038117EB58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB19C23C-C331-4253-81A7-FCDD87135321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB19C23C-C331-4253-81A7-FCDD87135321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB19C23C-C331-4253-81A7-FCDD87135321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB19C23C-C331-4253-81A7-FCDD87135321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC8EC9C-1CF4-4D1D-AA00-3C614F4955F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC8EC9C-1CF4-4D1D-AA00-3C614F4955F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC8EC9C-1CF4-4D1D-AA00-3C614F4955F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC8EC9C-1CF4-4D1D-AA00-3C614F4955F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A73CD8-4331-46AA-B72B-B8E3E51BDE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A73CD8-4331-46AA-B72B-B8E3E51BDE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A73CD8-4331-46AA-B72B-B8E3E51BDE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A73CD8-4331-46AA-B72B-B8E3E51BDE57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF642EA5-A45A-480E-9EC1-C3115D9CDC8C} = {36967115-7EF9-4BCA-BFCC-C2A71F8C6EEA}
+		{5627BDF5-63DB-49CE-AB4E-8944319DE984} = {0C8CA212-6154-457E-B19B-7572906AD474}
+		{CE3D285B-C16B-4D18-9B62-8038117EB58B} = {79550785-E116-4076-82D6-25B85BB7A255}
+		{CB19C23C-C331-4253-81A7-FCDD87135321} = {6853AAB7-A0A1-46C9-A211-C6399C736CB0}
+		{BFC8EC9C-1CF4-4D1D-AA00-3C614F4955F3} = {0C8CA212-6154-457E-B19B-7572906AD474}
+		{E9A73CD8-4331-46AA-B72B-B8E3E51BDE57} = {2FF1CEFD-DAB2-4220-A67D-E71FABF599DC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32934530-A63E-47BC-974A-B5009FAB825D}
+	EndGlobalSection
+EndGlobal
