@@ -1,5 +1,4 @@
-﻿using Bolgify.NSwag;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace Blogify.NSwag
 {
@@ -20,12 +19,6 @@ namespace Blogify.NSwag
 
             foreach (var api in apiList)
             {
-                //string className = $"{api.Name}Api";
-
-
-                // Path to NSwag executable
-                string nswagExePath = @"C:\Users\N.Nafei\.nuget\packages\nswag.msbuild\14.1.0\tools\Win\NSwag.exe";
-
                 var apiVersionList = api.Versions;
                 if (!string.IsNullOrEmpty(apiVersion))
                     apiVersionList = apiVersionList.Where(x => x == apiVersion).ToList();
@@ -45,13 +38,8 @@ namespace Blogify.NSwag
                         UpdateNswagFile(swaggerUrl, className, namespaceName, outputPath);
 
                         // Command to generate the NSwag client
+                        string nswagCommand = $@"nswag run api.nswag";
 
-                        string nswagCommand = $@"dotnet nswag run api.nswag";
-                        //string nswagCommand = $@"""{nswagExePath}"" openapi2csclient /input:{swaggerUrl} /classname:{className}{version.ToUpper()}  /output:{outputFilePath} /UseBaseUrl:false /generateDtoTypes:true /responseClass:ApiResponse /exceptionClass:ApiException /generateClientInterfaces:true /generateClientClasses:true /generateResponseClasses:true /generateOptionalParameters:true /GenerateDefaultValues:true";
-                        /// GenerateClientClasses:true
-                        /// GenerateOptionalParameters:true
-                        /// GenerateDefaultValues:true";
-                        ///  /GenerateClientClasses:true
                         ExecuteShellCommand(nswagCommand);
                     }
                     catch

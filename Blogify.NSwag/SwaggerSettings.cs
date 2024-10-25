@@ -1,4 +1,4 @@
-﻿namespace Bolgify.NSwag
+﻿namespace Blogify.NSwag
 {
     public class SwaggerSettings
     {
