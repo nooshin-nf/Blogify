@@ -1,0 +1,64 @@
+{
+  "runtime": "Net80",
+  "swaggerGenerator": {
+    "fromSwagger": {
+      "url": "YOUR_SWAGGER_URL_HERE", // Use a placeholder that you replace with actual URL dynamically if needed
+      "output": "swagger.json"
+    }
+  },
+  "codeGenerators": {
+    "openApiToCSharpClient": {
+      "className": "YOUR_CLASS_NAME_HERE",
+      "output": "YOUR_OUTPUT_PATH_HERE",
+      "namespace": "YOUR_NAMESPACE_HERE",
+      "generateClientClasses": true,
+      "generateClientInterfaces": false,
+      "generateOptionalParameters": true,
+      "wrapDtoExceptions": true,
+      "exceptionClass": "ApiException",
+      "wrapResponses": false,
+      "generateResponseClasses": true,
+      "responseClass": "ApiResponse",
+      "generateDtoTypes": true,
+      "generateDefaultValues": true,
+      "handleReferences": false,
+      "generateConstructorInterface": true,
+      "convertConstructorInterfaceData": false,
+      "queryNullValue": "",
+      "injectHttpClient": true,
+      "disposeHttpClient": true,
+      "generateExceptionClasses": true,
+      "useHttpClientCreationMethod": false,
+      "httpClientType": "System.Net.Http.HttpClient",
+      "useHttpRequestMessageCreationMethod": false, 
+      "useBaseUrl": true,
+      "generateBaseUrlProperty": true,
+      "generateSyncMethods": false,
+      "exposeJsonSerializerSettings": false,
+      "clientClassAccessModifier": "public",
+      "typeAccessModifier": "public",
+      "generateContractsOutput": false,
+      "parameterDateTimeFormat": "s",
+      "generateUpdateJsonSerializerSettingsMethod": true,
+      "serializeTypeInformation": false,
+      "generateJsonMethods": true,
+      "parameterArrayType": "System.Collections.Generic.IEnumerable",
+      "parameterDictionaryType": "System.Collections.Generic.IDictionary",
+      "responseArrayType": "System.Collections.ObjectModel.ObservableCollection",
+      "responseDictionaryType": "System.Collections.Generic.Dictionary",
+      "requiredPropertiesMustBeDefined": true,
+      "dateType": "System.DateTime",
+      "dateTimeType": "System.DateTime",
+      "timeType": "System.TimeSpan",
+      "timeSpanType": "System.TimeSpan",
+      "arrayType": "System.Collections.ObjectModel.ObservableCollection",
+      "dictionaryType": "System.Collections.Generic.Dictionary",
+      "arrayBaseType": "System.Collections.ObjectModel.ObservableCollection",
+      "dictionaryBaseType": "System.Collections.Generic.Dictionary",
+      "classStyle": "Inpc",
+      "generateDataAnnotations": true,
+      "generateImmutableArrayProperties": false,
+      "generateImmutableDictionaryProperties": false
+    }
+  }
+}
